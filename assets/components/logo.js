@@ -4,6 +4,11 @@ export class Logo extends LitElement {
     static styles = [
         css`
             :host {
+                width: 48px;
+                height: 48px;
+
+                -webkit-mask: url('../../Imagens/logo.svg');
+                mask: url('../../Imagens/logo.svg');
                 display: block;
             }
         `
