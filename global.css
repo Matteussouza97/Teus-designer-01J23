@@ -1,0 +1,20 @@
+:root {
+    --cor-primaria:#F2B279;
+    --cor-secundaria:#0D060C;
+    --cor-tom-1:#F27F1B;
+    --cor-tom-2:#F27127;
+    --cor-tom-3:#F2F2F2;
+}
+
+
+
+
+
+
+
+Body {
+    width: 100%;
+    height: 100vsh;
+    margin: 0;
+
+}

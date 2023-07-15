@@ -6,7 +6,8 @@ export class Logo extends LitElement {
             :host {
                 width: 48px;
                 height: 48px;
-
+                
+                background-color:black;
                 -webkit-mask: url('../../Imagens/logo.svg');
                 mask: url('../../Imagens/logo.svg');
                 display: block;
