@@ -5,7 +5,7 @@ export class Quadro1 extends LitElement {
     css`
       :host {
         
-        display: flex;
+        display:flex;
         width: 360px;
         height: 425px;
         justify-content: center;
@@ -14,6 +14,8 @@ export class Quadro1 extends LitElement {
 
         background: linear-gradient(0deg,rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.05) 100%);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        overflow:hidden;
+        
       }
     `,
   ];

@@ -1,20 +1,18 @@
 :root {
-    --cor-primaria:#F2B279;
-    --cor-secundaria:#0D060C;
-    --cor-tom-1:#F27F1B;
-    --cor-tom-2:#F27127;
-    --cor-tom-3:#F2F2F2;
+  --cor-primaria: #f2b279;
+  --cor-secundaria: #0d060c;
+  --cor-tom-1: #f27f1b;
+  --cor-tom-2: #f27127;
+  --cor-tom-3: #f2f2f2;
+
+  --font-titulo: "DM Serif Display", serif;
+  --font-texto: "DM Sans", sans-serif;
+  --font-corpo: "DM Serif Text", serif;
+  --font-botao: "Roboto Serif", serif;
 }
 
-
-
-
-
-
-
 Body {
-    width: 100%;
-    height: 100vsh;
-    margin: 0;
-
+  width: 100%;
+  height: 100vsh;
+  margin: 0;
 }
