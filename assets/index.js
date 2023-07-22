@@ -15,6 +15,7 @@ export * from './components/botao'
 //section
 export * from './sections/hero-section'
 export * from './sections/sobre-section'
+export * from './sections/portfolio-section'
 
 
 

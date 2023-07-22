@@ -7,7 +7,7 @@ export class PlanoDeFundo extends LitElement {
         width: 360px;
         height: 640px;
         position: absolute;
-        z-index: -1;
+        z-index: -100;
         left: 1px;
         opacity: 0.029999999329447746;
         display: block;
