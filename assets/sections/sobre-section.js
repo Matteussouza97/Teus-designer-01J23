@@ -14,6 +14,7 @@ export class SObreSection extends LitElement {
 
       div {
         padding: 32px;
+        padding-bottom:0;
       }
 
       app-quadro1 {
@@ -21,13 +22,11 @@ export class SObreSection extends LitElement {
         height: 640px;
         position: absolute;
         z-index: -10;
-               
       }
-      
+
       img {
         height: 100%;
       }
-      
 
       app-titulo {
         display: flex;
@@ -64,16 +63,26 @@ export class SObreSection extends LitElement {
       }
       section {
         display: flex;
-        padding: 20px 5px;
+        padding: 15px 5px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        gap: 16px;
+        gap: 10px;
         align-self: stretch;
 
         border-radius: 8px;
         background: rgba(175, 175, 175, 0.1);
         backdrop-filter: blur(3.5px);
+      }
+      app-botao,a {
+        gap:20px;
+       
+      }
+
+      feather-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     `,
   ];
@@ -83,7 +92,7 @@ export class SObreSection extends LitElement {
       <app-quadro1
         ><img src="wireframe.jpg" alt="Um wireframe de um site"
       /></app-quadro1>
-     
+
       <div>
         <app-titulo>Teus Designer</app-titulo>
         <section>
@@ -101,6 +110,16 @@ export class SObreSection extends LitElement {
               seus negócios online.</app-paragrafo
             >
           </article>
+          <app-botao>
+            <a href="sobre"
+              >Saiba Mais<feather-icon
+                icon="arrow-right-circle"
+                width="25"
+                height="25"
+                color="white"
+              ></feather-icon
+            ></a>
+          </app-botao>
         </section>
       </div>
     `;

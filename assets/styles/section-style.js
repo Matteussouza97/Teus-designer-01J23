@@ -14,5 +14,6 @@ export const section = css`
 
         
         overflow:hidden;
+        position:relative;
        
       }`
