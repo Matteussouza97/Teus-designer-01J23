@@ -1,32 +1,16 @@
 //components
-export * from './components/logo'
-export * from './components/plano-de-fundo'
-export * from './components/quadro1'
-export * from './components/titulo'
-export * from './components/paragrafo'
-export * from './components/botao'
-
-
-
-
-
-
+export * from "./components/logo";
+export * from "./components/plano-de-fundo";
+export * from "./components/quadro1";
+export * from "./components/titulo";
+export * from "./components/paragrafo";
+export * from "./components/botao";
 
 //section
-export * from './sections/hero-section'
-export * from './sections/sobre-section'
-export * from './sections/portfolio-section'
-
-
-
-
-
-
+export * from "./sections/hero-section";
+export * from "./sections/sobre-section";
+export * from "./sections/portfolio-section";
+export * from "./sections/contato-section";
 
 //pages
-export * from './pages/home-page'
-
-
-
-
-
+export * from "./pages/home-page";
