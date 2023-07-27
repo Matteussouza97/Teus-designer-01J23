@@ -11,9 +11,13 @@ export const section = css`
         justify-content: center;
         align-items: center;
         gap: 12px;
+        height:100svh; /* smallest view heigth */
 
         
         overflow:hidden;
         position:relative;
        
       }`
+
+     
+      
