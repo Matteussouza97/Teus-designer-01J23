@@ -5,21 +5,37 @@ export class Rodape extends LitElement {
     css`
       :host {
         display: inline-flex;
-        height: 96px;
+        height: 100%;
+        width: 100%;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+          ),
+          #e77917;
       }
-
-      app-paragrafo {
-        color: #080808;
-        font-family: DM Mono;
+      footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap:auto;
+      }
+      nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        gap: 12px;
+        color: #fff;
+        font-family: var(--font-botao);
         font-size: 12px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         line-height: normal;
-        letter-spacing: -0.5px;
       }
 
       span {
@@ -30,10 +46,22 @@ export class Rodape extends LitElement {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        position: absolute;
         bottom: 0px;
 
         background: rgba(0, 0, 0, 0.4);
+      }
+      app-paragrafo {
+        color: #fff;
+        font-family: var(--font-corpo);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.5px;
+      }
+      img {
+        width: 55px;
+        height: 55px;
       }
     `,
   ];
@@ -41,6 +69,7 @@ export class Rodape extends LitElement {
   render() {
     return html`
       <footer>
+        <img src="alogo.svg" />
         <nav>
           <a href="">Contato</a>
           <a href="">Portfolio</a>
