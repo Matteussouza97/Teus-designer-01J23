@@ -5,6 +5,7 @@ export * from "./components/quadro1";
 export * from "./components/titulo";
 export * from "./components/paragrafo";
 export * from "./components/botao";
+export * from "./components/rodape";
 
 //section
 export * from "./sections/hero-section";

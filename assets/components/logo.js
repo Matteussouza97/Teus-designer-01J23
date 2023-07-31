@@ -16,7 +16,22 @@ export class Logo extends LitElement {
     ];
 
     render() {
-        return html``;
+        return html`
+        <footer>
+        <nav>
+        <a href="">Contato</a>
+          <a href="">Portfolio</a>
+          <a href="services">Sobre</a>
+          <a href="baber">Teus Designer</a>
+          <a href="/">Home</a> 
+        </nav>
+        </footer>
+        <span>
+            <app-paragrafo></app-paragrafo>
+        </span>
+        
+        
+        `;
     }
 }
 customElements.define('app-logo', Logo);
