@@ -90,7 +90,7 @@ export class SObreSection extends LitElement {
   render() {
     return html`
       <app-quadro1
-        ><img src="wireframe.jpg" alt="Um wireframe de um site"
+        ><img loading="lazy" src="wireframe.jpg" alt="Um wireframe de um site"
       /></app-quadro1>
 
       <div>

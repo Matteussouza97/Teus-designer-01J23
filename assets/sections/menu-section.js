@@ -103,19 +103,19 @@ export class MenuSection extends LitElement {
     `,
   ];
   rolarContato() {
-    return nav.rolarPara('#contato')
+    return nav.rolarPara("#contato");
   }
-  rolarUnidades() {
-    return nav.rolarPara('#portfolio')
+  rolarPortfolio() {
+    return nav.rolarPara("#portfolio");
   }
   render() {
     return html`
       <dialog>
         <img src="logowhite.svg" />
         <nav>
-          <a href="">Unidades</a>
-          <a href="">Contato</a>
-          <a href="portfolio">Portfolio</a>
+          
+        <button @click=${this.rolarContato}>Contato</button> 
+          <button @click=${this.rolarPortfolio}>Portfolio</button>
           <a href="Sobre">Teus Designer</a>
           <a href="/">Home</a>
           <button @click=${nav.fechar}>

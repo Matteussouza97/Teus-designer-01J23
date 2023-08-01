@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { nav } from "../../main";
 
 export class Rodape extends LitElement {
   static styles = [
@@ -97,8 +98,8 @@ export class Rodape extends LitElement {
   rolarContato() {
     return nav.rolarPara("#contato");
   }
-  rolarPortifolio() {
-    return nav.rolarPara("#portifolio");
+  rolarPortfolio() {
+    return nav.rolarPara("#portfolio");
   }
 
   render() {
@@ -107,9 +108,8 @@ export class Rodape extends LitElement {
         <img src="alogo.svg" />
         <nav>
           <button @click=${this.rolarContato}>Contato</button> 
-          <button @click=${this.rolarPortifolio}>Portfolio</button>
-          <a href="services">Sobre</a>
-          <a href="baber">Teus Designer</a>
+          <button @click=${this.rolarPortfolio}>Portfolio</button>
+          <a href="sobre">Teus Designer</a>
           <a href="/">Home</a>
         </nav>
       </footer>

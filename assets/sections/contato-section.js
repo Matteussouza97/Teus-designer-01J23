@@ -98,7 +98,7 @@ export class ContatoSection extends LitElement {
   render() {
     const numeroWhatsapp = "5511982865226";
     return html`
-      <app-quadro1><img src="contato.jpg" alt="" /></app-quadro1>
+      <app-quadro1><img loading="lazy" src="contato.jpg" alt="" /></app-quadro1>
       <article>
         <app-paragrafo class="titulo">Fale Conosco</app-paragrafo>
         <app-paragrafo

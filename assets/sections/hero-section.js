@@ -52,7 +52,7 @@ export class HeroSection extends LitElement {
           <h1>Teus Designer <span>Tenha seu site Agora!</span></h1>
         </app-titulo>
         <app-quadro1>
-          <img src="macbook.jpg" alt="Imagem de um descktop" />
+          <img loading="lazy" src="macbook.jpg" alt="Imagem de um descktop" />
         </app-quadro1>
       </section>
       <app-plano-de-fundo></app-plano-de-fundo>

@@ -39,7 +39,7 @@ export class PortfolioSection extends LitElement {
     return html`
       <app-plano-de-fundo></app-plano-de-fundo>
       <app-titulo>Portfolio</app-titulo>
-      <app-quadro1><img src="wire.jpg" alt="Imagem" /></app-quadro1>
+      <app-quadro1><img loading="lazy" src="wire.jpg" alt="Imagem" /></app-quadro1>
     `;
   }
 }

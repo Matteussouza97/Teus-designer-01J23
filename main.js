@@ -21,13 +21,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 export const nav = {
-    abrir: function () {
-      dialog.showModal()
-    },
-    fechar: function () {
-      dialog.close()
-    },
-  }
+  abrir: function () {
+    dialog.showModal();
+    navbar.classList.add("escondido");
+  },
+  rolarPara: function (secao) {
+  
+  Router.go("/");
+    router.ready.then(() => {
+      document
+        .querySelector("home-page")
+        .shadowRoot.querySelector(secao)
+        .scrollIntoView();
+
+      this.fechar();
+    });
+  },
+  fechar: function () {
+    dialog.close();
+  },
+};
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   navbar = document.querySelector("app-navbar");
