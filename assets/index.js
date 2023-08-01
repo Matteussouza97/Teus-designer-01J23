@@ -13,6 +13,5 @@ export * from "./sections/hero-section";
 export * from "./sections/sobre-section";
 export * from "./sections/portfolio-section";
 export * from "./sections/contato-section";
+export * from "./sections/menu-section";
 
-//pages
-export * from "./pages/home-page";

@@ -1,16 +1,12 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
 
 export class HomePage extends LitElement {
-    static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
-    ];
-
-    render() {
-        return html`<p> Teus Designer</p>`;
-    }
+  render() {
+    return html` 
+        <hero-section></hero-section>
+      <sobre-section></sobre-section>
+      <portfolio-section></portfolio-section>
+      <contato-section></contato-section>`;
+  }
 }
-customElements.define('app-home-page', HomePage);
+customElements.define("home-page", HomePage);

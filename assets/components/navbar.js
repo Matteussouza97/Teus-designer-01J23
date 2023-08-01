@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-// import { nav } from "../../main";
+import { nav } from "../../main";
 
 export class Navbar extends LitElement {
   static styles = [
@@ -44,7 +44,7 @@ export class Navbar extends LitElement {
         icon="menu"
         width="25"
         height="25"
-        color="black"
+        color="black" @click=${nav.abrir}
       ></feather-icon>
     `;
   }

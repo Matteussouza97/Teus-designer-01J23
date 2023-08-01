@@ -16,3 +16,6 @@ Body {
   height: 100vsh;
   margin: 0;
 }
+
+.escondido {
+  top: -96px;}
