@@ -6,6 +6,7 @@ export * from "./components/titulo";
 export * from "./components/paragrafo";
 export * from "./components/botao";
 export * from "./components/rodape";
+export * from "./components/navbar";
 
 //section
 export * from "./sections/hero-section";

@@ -4,7 +4,7 @@ export class Rodape extends LitElement {
   static styles = [
     css`
       :host {
-        display: inline-flex;
+        display: block;
         height: 100%;
         width: 100%;
         flex-direction: column;
@@ -18,13 +18,14 @@ export class Rodape extends LitElement {
           ),
           #e77917;
       }
-      footer{
+      footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap:auto;
+        padding: 2rem;
       }
+      a,
       nav {
         display: flex;
         flex-direction: column-reverse;
@@ -36,13 +37,14 @@ export class Rodape extends LitElement {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        text-decoration: none;
       }
 
       span {
         display: flex;
-        width: 360px;
-        height: 31px;
-        padding: 9px 25px;
+        width: 100%;
+        height: 2rem;
+
         justify-content: center;
         align-items: center;
         gap: 10px;
@@ -63,16 +65,49 @@ export class Rodape extends LitElement {
         width: 55px;
         height: 55px;
       }
+
+      /* copiado do vanguarda */
+
+      a, button {
+        color: white;
+
+        text-decoration: none;
+
+        opacity: 0.9;
+        cursor: poiter;
+        transition: color 300ms;
+      }
+      button {
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
+      a:hover,
+      button:hover {
+        color: var(--tom-1);
+      }
+
+      a:active,
+      button:active {
+        color: var(--cor-primaria);
+      }
     `,
   ];
+  rolarContato() {
+    return nav.rolarPara("#contato");
+  }
+  rolarPortifolio() {
+    return nav.rolarPara("#portifolio");
+  }
 
   render() {
     return html`
       <footer>
         <img src="alogo.svg" />
         <nav>
-          <a href="">Contato</a>
-          <a href="">Portfolio</a>
+          <button @click=${this.rolarContato}>Contato</button> 
+          <button @click=${this.rolarPortifolio}>Portfolio</button>
           <a href="services">Sobre</a>
           <a href="baber">Teus Designer</a>
           <a href="/">Home</a>
